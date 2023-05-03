@@ -8,6 +8,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body.active {
+  font-family: "PT Serif", serif;
+}
+body.active input {
   font-family: "PT Serif", serif;
 }
 
@@ -16,6 +22,12 @@ q {
   padding-left: 20px;
 }
 
+body {
+  font-family: sans-serif;
+}
+body input {
+  font-family: sans-serif;
+}
 body.dark {
   background-color: black;
 }
@@ -163,6 +175,7 @@ ul {
   gap: 10px;
   padding: 0px 20px 0px 0;
   border-right: 1px solid rgba(113, 113, 113, 0.382);
+  cursor: pointer;
 }
 .head .container .font i {
   font-size: 14px;

@@ -117,7 +117,22 @@ while(k < Math.abs(4-lengt)){
 }
 
 
-   console.log(obj.meanings)
 }
 
-// https://api.dictionaryapi.dev/api/v2/entries/en/
+// change font 
+const font = document.querySelector('.font');
+const fontFam = font.querySelector('p');
+font.addEventListener('click', changeFont);
+
+function changeFont(){
+    let val = fontFam.innerHTML.toLowerCase();
+    if(val === "serif"){
+        fontFam.innerHTML = "Sans-serif";
+        document.body.classList.remove('active');
+    }else{
+        fontFam.innerHTML = "Serif"
+        document.body.classList.add('active');
+
+    }
+    console.log(fontFam.innerHTML.toLowerCase())
+}

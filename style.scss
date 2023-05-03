@@ -7,7 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body.active {
     font-family: 'PT Serif', serif;
+    input{
+            font-family: 'PT Serif', serif;
+
+        }
 }
 q{
     color: rgb(113, 112, 112);
@@ -15,6 +21,11 @@ q{
 }
 // setting
 body{
+    font-family: sans-serif;
+    input{
+        font-family: sans-serif;
+
+    }
     &.dark{
         background-color: black;
       
@@ -162,6 +173,7 @@ gap: 10px;
             gap: 10px;
             padding: 0px 20px 0px 0;
             border-right: 1px solid rgba(113, 113, 113, 0.382);
+            cursor: pointer;
             i{
                 font-size: 14px;
                 color: var(--main-color);
