@@ -54,6 +54,7 @@ const definitionCont = document.querySelectorAll('.definition-container');
 const definitionContUl = document.querySelectorAll('.definition-container ul');
 const synonym = document.querySelectorAll('.synonym');
 const syno = document.querySelectorAll('.syno');
+const source = document.querySelector('.source span');
 search.addEventListener('click', getWord);
 
 async function getWord(){
@@ -97,21 +98,17 @@ for(let j = 0; j < obj.meanings[i].definitions.length; j++){
     li.innerHTML = obj.meanings[i].definitions[j].definition;
     definitionContUl[i].appendChild(li);
 }
-
-
 }
+source.parentElement.parentElement.classList.remove('notDisplayed')
+source.innerHTML = obj.sourceUrls[0];
 let lengt = Math.min(4,obj.meanings.length);
 
 if(Math.abs(4-lengt) === 0) {
-    console.log(lengt)
-    console.log(Math.abs(4-lengt))
     return;
 };
-console.log()
 let k = 0;
 let track = 3;
 while(k < Math.abs(4-lengt)){
-    console.log(synonym[track])
     lineContainer[track].classList.add('notDisplayed');
     definitionCont[track].classList.add('notDisplayed');
     synonym[track].classList.add('notDisplayed');
