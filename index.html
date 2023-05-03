@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dictionnary</title>
+</head>
+<body>
+    <div class="head">
+<div class="container">
+    <div class="icon"></div>
+<div class="text">
+    <div class="font">
+   <p>Serif</p>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+<div class="dark-mode">
+    <div class="toggle-dark"></div>
+    <i class="fa-regular fa-moon"></i>
+</div>
+</div>
+</div>
+    </div>
+    <!-- search bar -->
+    <div class="search container">
+        <input type="text" placeholder="Enter your word">
+        <i class="fa-solid fa-magnifying-glass search-btn"></i>
+    </div>
+    <!-- search bar -->
+    <!-- display Word -->
+    <div class="word">
+ <div class="container">
+    <div class="text">
+        <h1 class="word-p"></h1>
+        <p class="phoenetic"></p>
+      </div>
+      <div class="play-pause play notDisplayed">
+        <i class="fa-solid fa-play active"></i>
+        <i class="fa-solid fa-pause"></i>
+      </div>
+ </div>
+    </div>
+    <audio src="" controls></audio>
+    <!-- display Word -->
+    <!-- type of word -->
+    <div class="word-type  line-container notDisplayed">
+        <div class="container">
+            <p>noun</p>
+<div class="line"></div>
+        </div>
+    </div>
+    <!-- type of word -->
+    <!-- word meaning -->
+    <div class="word-meaning  definition-container notDisplayed">
+        <div class="container">
+        <p class="grey">Meaning</p>
+<ul >
+</ul>
+        </div>
+    </div>
+    <!-- word meaning -->
+    <!-- synonyme -->
+    <div class="synonym notDisplayed">
+        <div class="container">
+            <p class="grey">Synonyms</p>
+            <p class="syno"></p>
+        </div>
+    </div>
+    <!-- synonyme -->
+    <!-- verb -->
+    <div class="word-verb line-container notDisplayed">
+        <div class="container">
+            <p>verb</p>
+<div class="line"></div>
+        </div>
+    </div>
+    <!-- verb -->
+    <!-- verb meaning -->
+    <div class="verb-meaning definition-container notDisplayed">
+        <div class="container">
+            <p class="grey">Meaning</p>
+            <ul class="verbs">
+            </ul>
+        </div>
+    </div>
+    <!-- verb meaning -->
+     <!-- synonyme -->
+     <div class="synonym notDisplayed">
+        <div class="container">
+            <p class="grey">Synonyms</p>
+            <p class="syno"></p>
+        </div>
+    </div>
+    <!-- synonyme -->
+<!-- adjectiv -->
+<div class="word-adjectiv line-container notDisplayed">
+    <div class="container">
+        <p>Adj</p>
+        <div class="line"></div>
+    </div>
+</div>
+<!-- adjectiv -->
+<!-- adjectiv meaning -->
+<div class="adj-meaning definition-container notDisplayed">
+    <div class="container">
+        <p class="grey">Meaning</p>
+        <ul>
+        </ul>
+    </div>
+</div>
+<!-- adjectiv meaning -->
+<!-- synonyme -->
+<div class="synonym  notDisplayed">
+    <div class="container">
+        <p class="grey">Synonyms</p>
+        <p class="syno"></p>
+    </div>
+</div>
+<!-- synonyme -->
+
+
+<!-- adjectiv -->
+<div class="word-adverb line-container notDisplayed">
+    <div class="container">
+        <p>Adv</p>
+        <div class="line"></div>
+    </div>
+</div>
+<!-- adjectiv -->
+<!-- adjectiv meaning -->
+<div class="adv-meaning definition-container notDisplayed">
+    <div class="container">
+        <p class="grey">Meaning</p>
+        <ul>
+        </ul>
+    </div>
+</div>
+<!-- adjectiv meaning -->
+<!-- synonyme -->
+<div class="synonym notDisplayed">
+    <div class="container">
+        <p class="grey">Synonyms</p>
+        <p class="syno"></p>
+    </div>
+</div>
+<!-- synonyme -->
+
+
+
+    <!-- source -->
+    <div class="source">
+    <div class="container">
+        <p class="grey">source</p>
+        <span>https://en.wiktionary.org/wiki/keyboard</span>
+    </div>
+    </div>
+    <!-- source -->
+    <script src="./app.js"></script>
+</body>
+</html>
